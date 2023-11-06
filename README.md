@@ -105,4 +105,4 @@ O sistema oferece as seguintes funcionalidades:
 4. Ao cadastrar um professor, forneça as informações pessoais e a disciplina que ele ministra.
 5. O sistema listará os alunos e professores cadastrados após a conclusão.
 
-Este sistema fornece uma estrutura básica para gerenciar alunos, professores e cursos. Você pode personalizá-lo de acordo com suas necessidades específicas.
+Este sistema fornece uma estrutura básica para gerenciar alunos, professores e cursos. 
