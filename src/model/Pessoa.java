@@ -1,3 +1,4 @@
+package model;
 import java.sql.Date; //para representar a data de nascimento de uma pessoa
 import java.time.LocalDate; //para calcular a idade de uma pessoa com base na data de nascimento e a data atual.
 import java.time.Period; //para calcular a diferença de idade entre a data de nascimento e a data atual.

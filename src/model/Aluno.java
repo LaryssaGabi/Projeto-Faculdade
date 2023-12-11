@@ -1,3 +1,4 @@
+package model;
 import java.util.ArrayList;
 
 public class Aluno {
@@ -8,8 +9,7 @@ public class Aluno {
     private SituacaoAcademica situacaoAcademica; // se o aluno esta ativo, trancado, transferico, formado.
     private ArrayList<RegistroHistorico> historicoAcademica;
 
-    public Aluno(Pessoa estudante, String ra, double notas, SituacaoAcademica situacaoAcademica,
-            String historicoAcademica, Cursos curso) {
+    public Aluno(Pessoa estudante, String ra, double notas, SituacaoAcademica situacaoAcademica, Cursos curso) {
         this.estudante = estudante;
         this.ra = ra;
         this.notas = 0.0; // Inicialmente, o aluno não possui notas
@@ -17,6 +17,7 @@ public class Aluno {
         this.historicoAcademica = new ArrayList<>();
         this.curso = curso;
     }
+    
 
     public Aluno(Pessoa estudante2, String ra2, double notas2, Aluno.SituacaoAcademica ativo,
             Object historicoAcademica2, Object curso2) {
@@ -94,7 +95,8 @@ public class Aluno {
     }
 
     enum SituacaoAcademica {
-        ativo, trancado, formado, trasnferido;
+        ativo, trancado, formado, transferido;
     }
+    
 
 }

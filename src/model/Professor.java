@@ -1,3 +1,4 @@
+package model;
 public class Professor {
     private Pessoa educador;
     private String diciplina;
@@ -69,9 +70,9 @@ public class Professor {
     // Método para verificar se o professor trabalha em período integral (cobrindo
     // todos os turnos)
     public boolean trabalhaPeriodoIntegral() {
-        return turno == Turno.manha && turno == Turno.tarde && turno == Turno.noite;
+        return turno == Turno.manha || turno == Turno.tarde || turno == Turno.noite;
     }
-
+    
     // Método para obter o turno como uma string legível
     public String getTurnoAsString() {
         switch (turno) {

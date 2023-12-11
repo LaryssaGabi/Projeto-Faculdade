@@ -1,3 +1,4 @@
+package model;
 public class EnderecoDeMoradia {
     private Pessoa enderecoPessoa;
     private String rua;

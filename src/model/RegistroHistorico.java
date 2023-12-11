@@ -1,3 +1,4 @@
+package model;
 public class RegistroHistorico {
     private String disciplina;
     private double nota;

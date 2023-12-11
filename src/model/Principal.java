@@ -1,3 +1,4 @@
+package model;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class Principal {
                 // Crie o objeto Professor com as informações coletadas e adicione à lista de
                 // professores.
                 Professor professor = new Professor(new Pessoa(nome, Date.valueOf("2000-01-01"), 0, "", "", "", ""),
-                        disciplina, salario, 0, Professor.Turno.manha);
+                        disciplina, salario, 0,Professor.Turno.manha);
                 professores.add(professor);
             } else {
                 System.out.println("Escolha inválida.");
@@ -69,8 +70,8 @@ public class Principal {
         // Imprima os professores cadastrados
         System.out.println("Professores cadastrados:");
         for (Professor professor : professores) {
-            System.out.println(
-                    "Nome: " + professor.getEducador().getNome() + ", Disciplina: " + professor.getDiciplina());
+            System.out.println("Nome: " + professor.getEducador().getNome() + ", Disciplina: " +
+                    professor.getDiciplina() + ", Turno: " + professor.getTurnoAsString());
         }
 
         // Feche o scanner
@@ -78,6 +79,6 @@ public class Principal {
     }
 }
 
-
-//Neste código, o programa permite que o usuário cadastre alunos ou professores e depois lista os alunos e professores cadastrados. 
-//Até o momento parei aqui.
+// Neste código, o programa permite que o usuário cadastre alunos ou professores
+// e depois lista os alunos e professores cadastrados.
+// Até o momento parei aqui.
