@@ -1,6 +1,6 @@
 package model;
+
 import java.sql.Date;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,7 +54,7 @@ public class Principal {
                 // Crie o objeto Professor com as informações coletadas e adicione à lista de
                 // professores.
                 Professor professor = new Professor(new Pessoa(nome, Date.valueOf("2000-01-01"), 0, "", "", "", ""),
-                        disciplina, salario, 0,Professor.Turno.manha);
+                        disciplina, salario, 0, Professor.Turno.manha);
                 professores.add(professor);
             } else {
                 System.out.println("Escolha inválida.");
